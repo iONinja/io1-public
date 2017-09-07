@@ -2,6 +2,6 @@
 
 while true
 do
-    /root/game/a.out &>> game.log
+    /root/game/a.out &>> /root/game/game.log
     sleep 1
 done
