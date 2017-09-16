@@ -1,0 +1,15 @@
+{
+  "name": "balancer",
+  "version": "1.0.0",
+  "description": "Balancer for io1",
+  "main": "balancer.js",
+  "author": "iO Ninja",
+  "license": "ISC",
+  "dependencies" :
+  {
+    "express": "latest",
+    "cors": "latest",
+    "maxmind": "latest",
+    "request": "latest"
+  }
+}
