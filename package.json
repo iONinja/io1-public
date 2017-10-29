@@ -10,6 +10,7 @@
     "express": "latest",
     "cors": "latest",
     "maxmind": "latest",
-    "request": "latest"
+    "request": "latest",
+    "linode-api": "latest"
   }
 }
