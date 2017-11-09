@@ -1,0 +1,7 @@
+#!/bin/bash
+
+while true
+do
+    gdb -ex run /root/game/a.out &>> /root/game/game.log
+    sleep 1
+done
