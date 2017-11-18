@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd /root/balancer
+cp today.log yesterday.log
+rm today.log
