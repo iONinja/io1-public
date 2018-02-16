@@ -5,7 +5,7 @@
   "main": "balancer.js",
   "author": "iO Ninja",
   "license": "ISC",
-  "dependencies" :
+  "dependencies":
   {
     "express": "latest",
     "cors": "latest",
