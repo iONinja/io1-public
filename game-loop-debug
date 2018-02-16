@@ -2,6 +2,6 @@
 
 while true
 do
-    gdb -ex run /root/game/a.out &>> /root/game/game.log
+    gdb -batch -ex "run" -ex "bt" /root/game/a.out 2>&1 | grep -v ^"ERROR: backtrace not available"$ &>> /root/game/game.log
     sleep 1
 done
