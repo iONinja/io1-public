@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd /root/balancer
+rm balancer.log
+rm error.log
+forever cleanlogs

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd /root/game
+rm game.log
