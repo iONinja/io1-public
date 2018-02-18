@@ -2,6 +2,6 @@
 
 while true
 do
-    gdb -batch -ex "run" -ex "bt" /root/game/a.out &>> /root/game/game.log
+    gdb -batch -ex "run" -ex "bt" -ex "info locals" -ex "p this" /root/game/a.out &>> /root/game/game.log
     sleep 1
 done
