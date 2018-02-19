@@ -4,4 +4,3 @@ cd /root/game
 rm a.out
 expect download.exp
 chmod +x a.out
-game-drain
