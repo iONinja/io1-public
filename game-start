@@ -1,5 +1,0 @@
-#!/bin/bash
-
-game-stop $$
-echo "Starting game loop"
-nohup game-loop &> /dev/null &
