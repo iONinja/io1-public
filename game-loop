@@ -1,7 +1,0 @@
-#!/bin/bash
-
-while true
-do
-    /root/game/a.out &>> /root/game/game.log
-    sleep 1
-done
