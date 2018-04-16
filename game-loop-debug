@@ -1,7 +1,14 @@
 #!/bin/bash
 
+if [ ! -f /root/game/restarts.txt ]; then
+        echo 0 > /root/game/restarts.txt.txt
+fi
+
 while true
 do
     gdb -batch -ex "run" -ex "bt" -ex "info variables" -ex "info locals" -ex "info args" -ex "p this" /root/game/a.out &>> /root/game/game.log
+    old=`cat /root/game/restarts.txt`
+    new=`expr $old + 1`
+    echo $new > /root/game/restarts.txt
     sleep 1
 done
