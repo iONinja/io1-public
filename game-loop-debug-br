@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ ! -f /var/restartsbr.txt ]; then
+        echo 0 > /var/restartsbr.txt
+fi
+
+while true
+do
+    gdb -batch -ex "run" -ex "bt" -ex "info locals" -ex "info args" -ex "p this" --args /root/game/a.out br &>> /root/game/gamebr.log
+    old=`cat /var/restartsbr.txt`
+    new=`expr $old + 1`
+    echo $new > /var/restartsbr.txt
+    sleep 1
+done

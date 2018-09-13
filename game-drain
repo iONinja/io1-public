@@ -2,3 +2,4 @@
 
 echo "Sending drain signal to server"
 echo 0 > /tmp/game
+echo 0 > /tmp/br

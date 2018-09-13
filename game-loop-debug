@@ -6,7 +6,7 @@ fi
 
 while true
 do
-    gdb -batch -ex "run" -ex "bt" -ex "info locals" -ex "info args" -ex "p this" /root/game/a.out &>> /root/game/game.log
+    gdb -batch -ex "run" -ex "bt" -ex "info locals" -ex "info args" -ex "p this" --args /root/game/a.out ffa &>> /root/game/game.log
     old=`cat /var/restarts.txt`
     new=`expr $old + 1`
     echo $new > /var/restarts.txt

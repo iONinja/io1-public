@@ -3,3 +3,4 @@
 game-stop $$
 echo "Starting game loop (debug mode)"
 nohup game-loop-debug &> /dev/null &
+nohup game-loop-debug-br &> /dev/null &
